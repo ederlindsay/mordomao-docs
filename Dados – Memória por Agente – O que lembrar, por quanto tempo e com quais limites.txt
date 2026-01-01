@@ -1,0 +1,320 @@
+# Dados – Memória por Agente  
+## O que lembrar, por quanto tempo e com quais limites
+
+---
+
+## Introdução
+
+No Mordomão, **memória não é acúmulo de dados**.  
+Memória é **mordomia da história espiritual** do usuário.
+
+Lembrar demais:
+- cria dependência
+- cristaliza rótulos
+- transforma processo em identidade
+
+Lembrar de menos:
+- quebra acompanhamento
+- gera repetição vazia
+- impede discernimento no tempo
+
+Por isso, a memória por agente é **intencionalmente limitada, contextual e pastoral**.
+
+---
+
+## Princípio Central da Memória no Mordomão
+
+> **A memória existe para sustentar fidelidade,  
+não para definir quem a pessoa é.**
+
+📖 Lamentações 3:22–23  
+> “As misericórdias se renovam a cada manhã.”
+
+Nenhum agente tem direito a uma memória absoluta.
+
+---
+
+## Tipos de Memória no Sistema
+
+O Mordomão trabalha com **4 camadas de memória**, com escopos e limites claros:
+
+1. **Memória Global (Mordomo-Chefe)**
+2. **Memória por Agente de Área**
+3. **Memória de Ciclo (curto prazo)**
+4. **Memória Histórica Fria (arquivo)**
+
+---
+
+## 1. Memória Global – Agente Mordomo-Chefe
+
+### Objetivo
+Manter **coerência teológica e continuidade espiritual geral**.
+
+### O que lembrar
+- áreas recorrentes de restauração
+- tendências gerais de governo (não eventos isolados)
+- padrões de excesso ou negligência
+- histórico de retorno após falha
+- tom pastoral adequado ao usuário (sensível, resistente, exausto)
+
+### O que NÃO lembrar
+- detalhes íntimos específicos
+- falas literais antigas
+- quedas específicas como identidade
+- “perfil psicológico”
+
+### Horizonte de tempo
+- **6 a 12 meses**, com peso decrescente
+- padrões antigos perdem força progressivamente
+
+### Limites
+- nunca usar memória para acusar
+- nunca dizer “você sempre faz isso”
+- memória global **orienta tom**, não conteúdo
+
+---
+
+## 2. Memória por Agente de Área
+
+Cada agente guarda **apenas o que é relevante para seu território**.
+
+---
+
+### 2.1 Agente Relacionamentos
+
+**Lembrar**
+- conflitos recorrentes (sem nomes)
+- padrões de fuga ou dureza
+- práticas frequentes de reconciliação
+- resistência ao perdão
+
+**Não lembrar**
+- falas literais sobre terceiros
+- detalhes sensíveis repetidamente
+- “histórico de culpa”
+
+**Tempo**
+- **3 a 6 meses**
+
+---
+
+### 2.2 Agente Corpo / Ritmo
+
+**Lembrar**
+- ciclos de excesso
+- resistência ao descanso
+- limites que funcionaram
+- sinais recorrentes de esgotamento
+
+**Não lembrar**
+- métricas físicas
+- detalhes médicos
+- comparações temporais longas
+
+**Tempo**
+- **2 a 4 meses**
+
+---
+
+### 2.3 Agente Vocação
+
+**Lembrar**
+- idolatria recorrente (controle, reconhecimento)
+- dificuldade em dizer “não”
+- decisões alinhadas recentes
+- micro-obediências sustentadas
+
+**Não lembrar**
+- cargos, status, resultados
+- falhas antigas como padrão fixo
+
+**Tempo**
+- **4 a 6 meses**
+
+---
+
+### 2.4 Agente Mordomia
+
+**Lembrar**
+- medo recorrente de escassez
+- padrões de controle
+- gestos de generosidade praticados
+- resistências frequentes
+
+**Não lembrar**
+- valores monetários
+- patrimônio
+- comparações financeiras
+
+**Tempo**
+- **3 a 6 meses**
+
+---
+
+### 2.5 Agente Missão
+
+**Lembrar**
+- omissão recorrente
+- ativismo excessivo
+- práticas simples de serviço
+- proximidade com pessoas reais
+
+**Não lembrar**
+- feitos heroicos
+- impacto percebido
+- reconhecimento recebido
+
+**Tempo**
+- **2 a 4 meses**
+
+---
+
+### 2.6 Agente Fidelidade
+
+**Lembrar**
+- constância no pequeno
+- padrões de abandono
+- retomadas após falha
+- práticas básicas sustentadas
+
+**Não lembrar**
+- picos emocionais
+- períodos antigos de empolgação
+- falhas isoladas
+
+**Tempo**
+- **6 a 12 meses**
+
+---
+
+### 2.7 Agente da Fonte
+
+**Lembrar**
+- períodos de secura
+- retorno à permanência
+- práticas que restauram
+- resistência ao silêncio
+
+**Não lembrar**
+- experiências espirituais intensas antigas
+- linguagem mística recorrente
+
+**Tempo**
+- **3 a 6 meses**
+
+---
+
+## 3. Memória de Ciclo (Curto Prazo)
+
+### Objetivo
+Sustentar **um ciclo específico de discernimento e obediência**.
+
+### O que lembrar
+- micro-obediência atual
+- resistências recentes
+- pergunta de acompanhamento
+- estado da área no ciclo
+
+### Tempo
+- **até o ciclo fechar** (obediência concluída ou simplificada)
+- geralmente **7 a 21 dias**
+
+### Limite
+- ao fechar o ciclo, essa memória **se dissolve**
+- apenas padrões relevantes sobem para memória de agente
+
+---
+
+## 4. Memória Histórica Fria (Arquivo)
+
+### Objetivo
+Auditoria, aprendizado sistêmico e visualização de tendências.
+
+### Conteúdo
+- eventos espirituais antigos
+- discernimentos passados
+- micro-obediências concluídas
+- retornos registrados
+
+### Acesso
+- **nunca usada diretamente na fala da IA**
+- usada apenas para:
+  - gerar dashboards
+  - análises agregadas
+  - restauração manual solicitada
+
+📖 Isaías 43:18  
+> “Não vos lembreis das coisas passadas…”
+
+---
+
+## Regras Canônicas de Uso da Memória
+
+### Regra 1 – Memória nunca define identidade
+A IA nunca diz:
+- “Você é assim”
+- “Você sempre faz isso”
+- “Seu padrão é esse”
+
+Ela pode dizer:
+- “Isso tem aparecido com frequência”
+- “Esse tema já surgiu antes”
+
+---
+
+### Regra 2 – Memória nunca substitui escuta
+Mesmo com histórico, a IA:
+- sempre escuta de novo
+- sempre convida à fala
+- nunca presume intenção
+
+---
+
+### Regra 3 – Memória tem peso decrescente
+Eventos antigos:
+- perdem prioridade
+- não são usados para confronto
+- só informam tom e cuidado
+
+---
+
+### Regra 4 – Esquecimento é parte da graça
+O sistema **esquece intencionalmente**:
+- detalhes antigos
+- falhas superadas
+- ciclos encerrados
+
+O esquecimento protege a graça.
+
+---
+
+## Implementação Técnica (conceitual)
+
+- Memória ativa → tabelas operacionais (CheckIn, DiscernmentResult, Assignments)
+- Memória por agente → views/materialized views por área + janela temporal
+- Memória de ciclo → referência direta no `MicroObedienceAssignment`
+- Memória fria → `SpiritualEvent` + `payload` (somente leitura agregada)
+
+---
+
+## O que a IA nunca pode fazer com memória
+
+- acusar com base no passado
+- comparar “antes vs agora” como cobrança
+- reabrir falhas encerradas
+- usar memória para pressionar obediência
+- criar dependência (“eu lembro tudo sobre você”)
+
+---
+
+## Declaração Final
+
+O Mordomão afirma:
+
+> **A memória serve à fidelidade,  
+não à condenação.**
+
+Lembrar o suficiente para cuidar.  
+Esquecer o suficiente para recomeçar.
+
+> **“As misericórdias se renovam a cada manhã.”**

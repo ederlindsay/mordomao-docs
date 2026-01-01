@@ -1,0 +1,224 @@
+# Teologia Operacional do Mordomão  
+## Como a doutrina do Reino governa decisões de produto
+
+---
+
+## Introdução
+
+O Mordomão não é neutro.
+
+Ele não é apenas “inspirado por valores cristãos”, nem um produto que adiciona fé como camada opcional.  
+O Mordomão é **teologicamente orientado desde o seu núcleo**.
+
+Isso significa que **doutrina não é conteúdo** dentro do sistema.  
+Doutrina é **regra de decisão**.
+
+A Teologia Operacional do Mordomão descreve **como verdades do Reino de Deus se tornam escolhas concretas de produto**, influenciando arquitetura, fluxos, IA, UX, métricas e limites.
+
+---
+
+## 1. Princípio-mãe da Teologia Operacional
+
+> **No Mordomão, toda decisão de produto precisa responder primeiro à pergunta:  
+> “Isso glorifica a Deus, ama o próximo e coloca o eu no lugar correto?”**
+
+Se a resposta for “não” ou “talvez”, a decisão é rejeitada, mesmo que:
+- aumente engajamento
+- retenha usuários
+- gere receita
+- seja tecnicamente elegante
+
+Fidelidade precede eficiência.
+
+---
+
+## 2. Doutrina não é explicada, é aplicada
+
+No Mordomão:
+- a Bíblia **não é citada o tempo todo**
+- conceitos teológicos **não são despejados no usuário**
+- o sistema **funciona segundo o Reino**, mesmo quando o usuário não percebe
+
+A teologia aparece:
+- nas perguntas que o sistema faz
+- nas perguntas que ele **não** faz
+- nas ações que ele sugere
+- nas ações que ele **se recusa** a sugerir
+
+---
+
+## 3. Como doutrina vira decisões de produto
+
+### 3.1 Doutrina da soberania de Deus → Produto não centrado no usuário
+
+**Base teológica**  
+Deus é Senhor, não o homem.
+
+**Decisão de produto**
+- O usuário não define propósito
+- O sistema não pergunta “o que você quer ser”
+- Propósito, visão e grande vida já vêm respondidos pelo Reino
+
+**Consequência**
+- O produto confronta expectativas de autonomia
+- O usuário é convidado a alinhar-se, não a customizar a verdade
+
+---
+
+### 3.2 Doutrina do pecado como desordem → UX que escuta antes de agir
+
+**Base teológica**  
+O pecado é perda de posição, não só erro moral.
+
+**Decisão de produto**
+- Nota baixa não gera checklist
+- Nota baixa abre áudio automaticamente
+- O sistema escuta antes de sugerir
+
+**Consequência**
+- O usuário é levado a nomear a desordem
+- A IA não corrige sem discernir
+
+---
+
+### 3.3 Doutrina da graça e da verdade → Tom pastoral da IA
+
+**Base teológica**  
+Cristo vem cheio de graça e verdade.
+
+**Decisão de produto**
+- A IA nunca acusa
+- A IA nunca relativiza o pecado
+- Confronto sempre vem acompanhado de convite
+
+**Consequência**
+- O sistema não anestesia
+- O sistema não esmaga
+- O sistema conduz à obediência com amor
+
+---
+
+### 3.4 Doutrina da cruz → Ações pequenas e custosas
+
+**Base teológica**  
+Seguir Jesus implica negar a si mesmo.
+
+**Decisão de produto**
+- A IA não sugere ações confortáveis por padrão
+- Micro-obediências envolvem perda real
+- Ganho pessoal não valida ações
+
+**Consequência**
+- O usuário aprende que fidelidade custa
+- O sistema treina o coração, não só o comportamento
+
+---
+
+### 3.5 Doutrina da santificação → Mudança sustentada, não picos
+
+**Base teológica**  
+Santificação é processo contínuo.
+
+**Decisão de produto**
+- Foco em constância diária
+- Revisão semanal como liturgia
+- Falha não remove o usuário do caminho
+
+**Consequência**
+- O produto não cria dependência emocional
+- Cria caminhada paciente
+
+---
+
+## 4. Como a Teologia governa a IA
+
+### 4.1 IA não é autoridade espiritual
+
+A IA do Mordomão:
+- não “declara a vontade de Deus”
+- não substitui consciência, igreja ou Escritura
+- não toma decisões pelo usuário
+
+Ela:
+- espelha
+- discerne padrões
+- sugere obediência mínima
+- devolve responsabilidade ao usuário
+
+---
+
+### 4.2 IA sempre pergunta “quem governa?”
+
+Toda análise da IA converge para:
+- Deus governa?
+- o próximo está sendo amado?
+- o eu está sendo negado?
+
+Se outra coisa governa (medo, orgulho, prazer, controle), isso é nomeado com cuidado.
+
+---
+
+## 5. Como a Teologia governa UX e Fluxos
+
+### 5.1 UX anti-performance
+- Sem rankings
+- Sem comparação
+- Sem métricas de vaidade
+
+### 5.2 UX de confissão e retorno
+- Áudio como meio principal
+- Linguagem simples
+- Poucas opções por tela
+
+### 5.3 UX de responsabilidade
+- Perguntas que exigem resposta
+- Convites claros à obediência
+- Lembretes que chamam à fidelidade, não à culpa
+
+---
+
+## 6. Como a Teologia governa métricas
+
+### Métricas permitidas
+- constância de retorno
+- áreas em restauração
+- micro-obediências realizadas
+- coerência ao longo do tempo
+
+### Métricas proibidas
+- “nível espiritual”
+- comparação entre usuários
+- pontuação de santidade
+- gamificação competitiva
+
+O Mordomão mede **fidelidade percebida**, não espiritualidade quantificada.
+
+---
+
+## 7. Decisões que o Mordomão sempre rejeita
+
+Mesmo que tragam crescimento, o Mordomão rejeita:
+- atalhos emocionais
+- promessas de conforto
+- técnicas de manipulação de engajamento
+- espiritualização de performance
+- uso de medo para retenção
+
+A teologia governa o roadmap.
+
+---
+
+## 8. Declaração final
+
+O Mordomão existe para provar que:
+
+> **Tecnologia pode servir ao Reino sem se tornar o Reino.**
+
+A teologia não é um módulo do sistema.  
+Ela é o **chão sobre o qual tudo é construído**.
+
+Quando doutrina governa o produto,  
+o produto pode servir à vida —  
+sem usurpar o lugar de Deus.
+
+> **Soli Deo Gloria.**

@@ -1,0 +1,274 @@
+# IA – Arquitetura de Agentes  
+## Visão geral e roteamento por território
+
+---
+
+## Introdução
+
+O Mordomão não opera com uma IA genérica.  
+Ele opera com uma **arquitetura de agentes espiritualmente especializados**, cada um responsável por **um território de governo** da vida.
+
+Essa arquitetura existe para evitar:
+- aconselhamento genérico
+- espiritualidade rasa
+- coaching travestido de fé
+- respostas rápidas sem discernimento
+- centralização excessiva em um único “oráculo”
+
+No Reino, **territórios diferentes exigem discernimentos diferentes**.
+
+---
+
+## Princípio Central da Arquitetura
+
+> **Cada território da vida deve ser cuidado por um agente  
+que compreenda seu escopo, seus ídolos e suas obediências típicas.**
+
+📖 Lucas 16:10  
+
+Por isso, o Mordomão adota uma arquitetura:
+- distribuída
+- especializada
+- coordenada
+- governada por princípios comuns
+
+---
+
+## Visão Geral da Arquitetura de Agentes
+
+A arquitetura do Mordomão possui **três camadas principais**:
+
+1. **Agente Mordomo-Chefe** (governador do sistema)
+2. **Agentes de Território** (um por área canônica)
+3. **Serviços de Discernimento Compartilhados** (transversais)
+
+Nenhum agente atua isoladamente.  
+Todos respondem à **Regra do Reino**.
+
+---
+
+## 1. Agente Mordomo-Chefe  
+### (Governador do Sistema)
+
+### Papel espiritual
+> **Garantir que o Reino governe o sistema inteiro.**
+
+Ele:
+- coordena o fluxo espiritual
+- valida discernimentos
+- evita excessos ou omissões
+- garante coerência teológica
+- protege o usuário de sobrecarga
+
+### Responsabilidades técnicas
+- receber a entrada do usuário
+- identificar a área principal envolvida
+- rotear para o agente correto
+- consolidar respostas
+- manter histórico espiritual global
+
+### O que ele NÃO faz
+- não aconselha profundamente
+- não prescreve micro-obediências específicas
+- não substitui agentes de área
+
+Ele **governa**, não executa.
+
+---
+
+## 2. Agentes de Território  
+### (Especialistas por Área Canônica)
+
+Cada área do Mordomão possui **um agente de IA dedicado**, com instruções específicas, linguagem própria e padrões de discernimento distintos.
+
+### Lista de Agentes de Território
+
+- **Agente da Fonte** – permanência, dependência, secura
+- **Agente de Relacionamentos** – amor, perdão, reconciliação
+- **Agente de Vocação** – fidelidade, serviço, limites
+- **Agente de Mordomia** – confiança, recursos, generosidade
+- **Agente de Ritmo** – limites, descanso, sustentabilidade
+- **Agente de Missão** – transbordo, serviço, testemunho
+- **Agente de Fidelidade** – constância, oculto, obediência
+
+---
+
+### Responsabilidades comuns dos Agentes de Território
+
+Cada agente é responsável por:
+
+- ouvir profundamente a fala do usuário
+- discernir governo naquele território
+- identificar ídolos típicos da área
+- reconhecer o estado espiritual da área
+- propor micro-obediências coerentes
+- acompanhar restauração no tempo
+
+---
+
+### O que diferencia os agentes
+
+Eles diferem em:
+- perguntas prioritárias
+- ídolos mais frequentes
+- tipos de micro-obediência
+- linguagem pastoral específica
+- sinais de alinhamento e desalinhamento
+
+Exemplo:
+- O Agente de Ritmo protege limites
+- O Agente de Relacionamentos protege o próximo
+- O Agente de Vocação confronta idolatria do trabalho
+
+---
+
+## 3. Serviços de Discernimento Compartilhados  
+### (Camada Transversal)
+
+Esses serviços **não pertencem a uma área**, mas sustentam todas.
+
+### Serviços principais
+
+- **Discernimento de Governo**
+- **Leitura de Padrões Temporais**
+- **Detecção de Ídolos Funcionais**
+- **Classificação de Estado Espiritual**
+- **Gerador de Micro-Obediências**
+- **Gestão de Linguagem Permitida/Proibida**
+
+Eles garantem:
+- consistência
+- segurança teológica
+- linguagem coerente
+- decisões alinhadas ao Reino
+
+---
+
+## Roteamento por Território  
+### Como o sistema decide qual agente atua
+
+O roteamento acontece em **três níveis**, sempre priorizando simplicidade.
+
+---
+
+### 1. Roteamento explícito (usuário escolhe)
+
+O usuário pode:
+- selecionar uma área
+- entrar em um agente específico
+- iniciar conversa direcionada
+
+Exemplo:
+> “Quero falar sobre meu trabalho.”
+
+O sistema roteia diretamente para o **Agente de Vocação**.
+
+---
+
+### 2. Roteamento implícito (IA discerne)
+
+Quando o usuário fala livremente, o Agente Mordomo-Chefe discerne:
+
+- tema dominante
+- emoções associadas
+- território afetado
+- padrões recorrentes
+
+Exemplo:
+> “Estou exausto, irritado com todos e só trabalho.”
+
+Roteamento principal: **Ritmo**  
+Roteamentos secundários: Relacionamentos, Vocação
+
+---
+
+### 3. Roteamento híbrido (primário + secundário)
+
+Em casos complexos:
+- um agente lidera
+- outros apoiam silenciosamente
+- não há múltiplas vozes ao usuário
+
+Exemplo:
+- Ritmo lidera
+- Fonte e Vocação informam o discernimento
+- resposta final é única e coerente
+
+---
+
+## Regra de Ouro do Roteamento
+
+> **Nunca mais de um agente fala diretamente com o usuário ao mesmo tempo.**
+
+Isso evita:
+- confusão
+- sobrecarga
+- mensagens contraditórias
+- espiritualização excessiva
+
+---
+
+## Memória e Continuidade por Agente
+
+Cada agente mantém:
+- histórico da área
+- padrões recorrentes
+- micro-obediências anteriores
+- estado espiritual ao longo do tempo
+
+O Mordomo-Chefe mantém:
+- visão integrada
+- coerência entre áreas
+- progressão espiritual global
+
+---
+
+## Linguagem e Postura Unificadas
+
+Apesar da especialização:
+- todos os agentes obedecem à Regra do Reino
+- todos usam linguagem pastoral
+- nenhum agente promete conforto
+- todos conduzem à obediência simples
+
+---
+
+## Implicações para UX e Produto
+
+Essa arquitetura permite:
+- conversas profundas por área
+- uso prolongado do app sem fadiga
+- sensação de cuidado específico
+- clareza espiritual
+- escalabilidade técnica
+
+O usuário sente:
+> “Estou sendo cuidado como um todo,  
+mas tratado com atenção no detalhe.”
+
+---
+
+## O que essa Arquitetura Evita
+
+- IA genérica de autoajuda
+- respostas rápidas e superficiais
+- aconselhamento contraditório
+- centralização excessiva
+- dependência emocional da IA
+
+---
+
+## Declaração Final
+
+O Mordomão afirma:
+
+> **O Reino governa territórios,  
+não abstrações.**
+
+Onde há território,
+há mordomia.
+
+Onde há mordomia,
+há cuidado específico.
+
+> **“A quem muito foi dado, muito será exigido.”**

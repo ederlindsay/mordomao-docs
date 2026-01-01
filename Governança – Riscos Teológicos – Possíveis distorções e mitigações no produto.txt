@@ -1,0 +1,394 @@
+# Governança – Riscos Teológicos  
+## Possíveis distorções e mitigações no produto
+
+---
+
+## Introdução
+
+Todo produto que lida com espiritualidade, discernimento e prática corre **riscos teológicos reais**.  
+Ignorá-los é soberba. Antecipá-los é mordomia.
+
+Este documento identifica **as principais distorções teológicas** que podem emergir no Mordomão —  
+mesmo com boas intenções — e define **mitigações explícitas no produto, na IA e na governança**.
+
+📖 Provérbios 4:23  
+> “Sobre tudo o que se deve guardar, guarda o teu coração.”
+
+---
+
+## Princípio Central da Governança Teológica
+
+> **Um sistema pode falar a linguagem correta  
+e ainda assim ensinar o caminho errado.**
+
+Por isso, o Mordomão:
+- assume sua **não neutralidade**
+- reconhece seus limites
+- se submete a salvaguardas contínuas
+
+---
+
+## Risco 1 – Moralismo Disfarçado de Obediência
+
+### Distorção
+A obediência deixa de ser resposta ao Reino  
+e passa a ser **cumprimento de regras para se sentir aceito**.
+
+Sinais:
+- usuário tenta “acertar”
+- medo de falhar
+- obediência como moeda
+- foco excessivo em “fazer certo”
+
+📖 Gálatas 3:3
+
+---
+
+### Mitigações no Produto
+
+- micro-obediência como **convite**, não exigência
+- linguagem sem “deveria”
+- ausência total de punição
+- falha sempre retorna à fala
+- dashboard sem métricas de sucesso moral
+
+---
+
+### Mitigações na IA
+
+- reafirmar graça antes da obediência
+- nunca associar valor pessoal à prática
+- evitar linguagem normativa
+- reforçar: *“obediência não compra nada”*
+
+---
+
+## Risco 2 – Legalismo Operacional
+
+### Distorção
+O sistema vira um **manual de conduta espiritual**  
+onde seguir o fluxo substitui dependência de Deus.
+
+Sinais:
+- obediência mecânica
+- pouco áudio / pouca fala
+- repetição sem verdade
+- foco no processo, não no governo
+
+📖 Colossenses 2:20–23
+
+---
+
+### Mitigações no Produto
+
+- áudio sempre prioritário
+- discernimento antes de ação
+- ciclos que se dissolvem
+- revisão semanal que reorienta o coração
+
+---
+
+### Mitigações na IA
+
+- perguntar “quem governa?” antes de “o que fazer?”
+- interromper ativismo
+- sugerir parada, não ação
+- simplificar quando detectar rigidez
+
+---
+
+## Risco 3 – Substituição do Espírito Santo pela IA
+
+### Distorção
+A IA se torna mediadora final da consciência e da decisão.
+
+Sinais:
+- usuário pergunta tudo à IA
+- medo de decidir sozinho
+- dependência relacional do app
+- frases como “o app mandou”
+
+📖 João 16:13
+
+---
+
+### Mitigações no Produto
+
+- IA nunca “manda”, apenas convida
+- decisões sempre devolvidas ao usuário
+- ausência de respostas fechadas
+- silêncio como opção válida
+- incentivo explícito à vida fora do app
+
+---
+
+### Mitigações na IA
+
+- linguagem de hipótese, não de autoridade
+- perguntas que devolvem discernimento
+- afirmações como:
+  - “Você pode decidir diante de Deus”
+  - “O Reino não exige resposta imediata”
+
+---
+
+## Risco 4 – Individualismo Espiritual
+
+### Distorção
+A jornada vira algo **privado, isolado e autocentrado**,  
+sem corpo, comunidade ou próximo.
+
+Sinais:
+- foco excessivo no “eu”
+- pouco serviço ao próximo
+- ausência de reconciliação
+- espiritualidade introspectiva
+
+📖 Hebreus 10:24–25
+
+---
+
+### Mitigações no Produto
+
+- áreas explícitas de Relacionamentos e Missão
+- micro-obediências voltadas ao próximo
+- linguagem comunitária
+- ausência de “autossuficiência espiritual”
+
+---
+
+### Mitigações na IA
+
+- lembrar do próximo nas decisões
+- sugerir reconciliação real
+- desencorajar isolamento
+- nunca validar fuga relacional
+
+---
+
+## Risco 5 – Prosperidade Espiritual Camuflada
+
+### Distorção
+O Reino vira meio para:
+- vida melhor
+- mais equilíbrio
+- menos dor
+- mais controle
+
+Sinais:
+- frustração quando obedecer custa
+- expectativa de retorno visível
+- leitura utilitarista da fé
+
+📖 João 12:24
+
+---
+
+### Mitigações no Produto
+
+- linguagem clara sobre custo
+- obediência sem promessa de conforto
+- evitar “benefícios do Reino”
+- métricas sem satisfação
+
+---
+
+### Mitigações na IA
+
+- normalizar sofrimento obediente
+- remover expectativa de recompensa
+- afirmar:
+  - “Obedecer pode doer”
+  - “O Reino é sobre perder”
+
+---
+
+## Risco 6 – Confissão sem Arrependimento
+
+### Distorção
+A fala vira catarse emocional sem mudança de governo.
+
+Sinais:
+- muito áudio, pouca obediência
+- repetição dos mesmos temas
+- ausência de custo
+- discurso sem resposta prática
+
+📖 Tiago 2:17
+
+---
+
+### Mitigações no Produto
+
+- fluxo de nota baixa sempre aponta para obediência
+- micro-obediência como fechamento do ciclo
+- limite de tempo em fala sem ação
+
+---
+
+### Mitigações na IA
+
+- espelhamento seguido de convite
+- nomear resistência com amor
+- reduzir palavras e aumentar clareza
+- insistir no simples
+
+---
+
+## Risco 7 – Ativismo Espiritual (Fazer Demais)
+
+### Distorção
+O usuário responde sempre com ação para evitar escuta.
+
+Sinais:
+- muitas obediências
+- pouca parada
+- ritmo quebrado
+- cansaço espiritual
+
+📖 Lucas 10:41–42
+
+---
+
+### Mitigações no Produto
+
+- biblioteca forte de micro-obediências de parada
+- Ritmo como área central
+- dashboard que evidencia excesso
+
+---
+
+### Mitigações na IA
+
+- sugerir descanso
+- convidar ao silêncio
+- reduzir demandas
+- quebrar heroísmo espiritual
+
+---
+
+## Risco 8 – Identidade Baseada no Histórico
+
+### Distorção
+O passado passa a definir quem a pessoa é.
+
+Sinais:
+- rótulos implícitos
+- memória usada para confrontar
+- repetição acusatória
+- vergonha persistente
+
+📖 Isaías 43:18–19
+
+---
+
+### Mitigações no Produto
+
+- memória com esquecimento intencional
+- ciclos que se encerram
+- ausência de histórico explícito ao usuário
+
+---
+
+### Mitigações na IA
+
+- nunca usar “sempre” ou “você é assim”
+- memória apenas para cuidado, não acusação
+- reforçar recomeço constante
+
+---
+
+## Risco 9 – Espiritualização de Questões Clínicas
+
+### Distorção
+Problemas psicológicos ou médicos tratados apenas espiritualmente.
+
+Sinais:
+- culpa excessiva
+- linguagem de pecado para doença
+- negação de ajuda externa
+
+📖 Provérbios 15:22
+
+---
+
+### Mitigações no Produto
+
+- linguagem cuidadosa
+- ausência de diagnósticos
+- incentivo indireto à ajuda humana
+- limites claros do sistema
+
+---
+
+### Mitigações na IA
+
+- nunca diagnosticar
+- nunca atribuir sofrimento físico à falta de fé
+- sugerir buscar apoio humano quando necessário
+
+---
+
+## Risco 10 – Idolatria do Próprio Produto
+
+### Distorção
+O Mordomão vira o “meio indispensável” da vida espiritual.
+
+Sinais:
+- medo de sair do app
+- centralidade excessiva
+- resistência à vida fora do sistema
+
+📖 Salmo 127:1
+
+---
+
+### Mitigações no Produto
+
+- design silencioso
+- ausência de urgência
+- notificações mínimas
+- incentivo explícito à vida real
+
+---
+
+### Mitigações na Governança
+
+- revisão teológica periódica
+- métricas que detectam dependência
+- coragem de reduzir engajamento
+- liderança guardiã do propósito
+
+---
+
+## Checklist Permanente de Mitigação
+
+Perguntas que devem ser feitas continuamente:
+
+1. Isso aproxima de Deus ou do sistema?
+2. Isso gera obediência ou performance?
+3. Isso sustenta graça ou pressão?
+4. Isso fortalece o próximo ou o eu?
+5. Isso permite silêncio e espera?
+6. Isso aponta para fora do app?
+
+Se alguma resposta for errada, **corrigir imediatamente**.
+
+---
+
+## Declaração Final
+
+O Mordomão afirma:
+
+> **Nenhum sistema é neutro.  
+Nenhum produto é inocente.**
+
+Por isso, escolhemos:
+- vigilância
+- humildade
+- correção contínua
+
+Para que o Mordomão seja **instrumento**,  
+nunca **senhor**.
+
+> **“Examinai tudo. Retende o bem.”**

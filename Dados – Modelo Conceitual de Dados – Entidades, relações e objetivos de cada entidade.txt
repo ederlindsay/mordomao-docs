@@ -1,0 +1,278 @@
+# Dados – Modelo Conceitual de Dados  
+## Entidades, relações e objetivo de cada entidade (Mordomão)
+
+---
+
+## Visão geral
+
+O modelo de dados do Mordomão existe para sustentar 5 capacidades centrais:
+
+1. **Memória espiritual** (o que foi dito, discernido e obedecido)
+2. **Roteamento por território** (área, agente e contexto)
+3. **Acompanhamento no tempo** (tendências, restauração e fidelidade)
+4. **Experiência de áudio** (captura → transcrição → espelhamento → decisão)
+5. **Operação do produto** (assinatura, notificações, consentimentos)
+
+O modelo deve permitir:
+- registrar “pouco, mas essencial”
+- evitar performance/ranking
+- privilegiar **fidelidade e governo** (não satisfação)
+- suportar **histórico por área** + visão integrada
+
+---
+
+## Entidades canônicas
+
+### 1) User
+**Objetivo:** representar o usuário do Mordomão e seu estado global de jornada.  
+**Campos típicos:** id, email, nome, timezone, created_at, last_active_at, onboarding_state.  
+**Relações:**  
+- 1:N com `CheckIn`, `WeeklyReview`, `ConversationThread`, `MicroObedienceAssignment`, `NotificationPreference`, `Subscription`, `ConsentEvent`.
+
+---
+
+### 2) Area
+**Objetivo:** catálogo das áreas canônicas do Mordomão (Fonte, Relacionamentos, Vocação, Mordomia, Corpo/Ritmo, Missão, Fidelidade).  
+**Campos típicos:** id, code, nome, ordem, descrição_curta, ativo.  
+**Relações:**  
+- 1:N com `AreaAssessment`, `ConversationThread`, `MicroObedienceAssignment`.
+
+---
+
+### 3) CheckIn
+**Objetivo:** evento diário do Reino (entrada mínima do dia).  
+**Campos típicos:** id, user_id, date_local, overall_score (1–5 opcional), created_at.  
+**Relações:**  
+- 1:N com `AreaAssessment`  
+- 0..N com `AudioCapture` (fala do check-in)  
+- 0..N com `DiscernmentResult`  
+- 0..N com `MicroObedienceAssignment`
+
+> Observação: `overall_score` pode ser derivado, mas guardar acelera dashboard.
+
+---
+
+### 4) AreaAssessment
+**Objetivo:** pontuação e estado por área dentro de um check-in (ou outro momento).  
+**Campos típicos:** id, checkin_id, area_id, score (1–5), spiritual_state (ALIGNED | RESTORATION | NEGLECTED), notes_short (opcional).  
+**Relações:**  
+- N:1 com `CheckIn`  
+- N:1 com `Area`  
+- 0..N com `DiscernmentResult` (diagnóstico da fala daquela área)
+
+---
+
+### 5) AudioCapture
+**Objetivo:** captura do áudio como “verdade falada” (confissão assistida / elaboração).  
+**Campos típicos:** id, user_id, context_type (CHECKIN | WEEKLY_REVIEW | FREE | AREA_CHAT), context_id, area_id (opcional), storage_path, duration_sec, created_at.  
+**Relações:**  
+- 0..1 com `Transcript`  
+- 0..N com `DiscernmentResult`
+
+---
+
+### 6) Transcript
+**Objetivo:** texto transcrito do áudio (base para discernimento e busca).  
+**Campos típicos:** id, audio_id, text, language, confidence, created_at.  
+**Relações:**  
+- N:1 com `AudioCapture`
+
+---
+
+### 7) ConversationThread
+**Objetivo:** canal de conversa por território (agente) e por contexto (ex.: “Relacionamentos”).  
+**Campos típicos:** id, user_id, area_id (opcional), agent_type (MORDOMO_CHEFE | AREA_AGENT), title, created_at, last_message_at.  
+**Relações:**  
+- 1:N com `ConversationMessage`  
+- 0..N com `DiscernmentResult` (quando houver discernimento na conversa)
+
+---
+
+### 8) ConversationMessage
+**Objetivo:** registrar mensagens do usuário e do agente (texto + referência a áudio).  
+**Campos típicos:** id, thread_id, role (USER | ASSISTANT | SYSTEM), text, audio_id (opcional), created_at.  
+**Relações:**  
+- N:1 com `ConversationThread`  
+- 0..1 com `AudioCapture`
+
+---
+
+### 9) DiscernmentResult
+**Objetivo:** saída estruturada do discernimento (as 4 camadas).  
+**Campos típicos:**  
+- id, user_id  
+- source_type (CHECKIN | AREA_ASSESSMENT | AUDIO | MESSAGE | WEEKLY_REVIEW)  
+- source_id  
+- area_id (opcional)  
+- classification (camada 1: território, tipo de fala, estado preliminar)  
+- diagnosis (camada 2: governo, ídolos suspeitos, resistências, sinais do Reino)  
+- next_step (camada 3: micro-obediência sugerida em forma canônica)  
+- followup_plan (camada 4: gatilhos de retomada, perguntas de acompanhamento)  
+- created_at, model_version
+
+**Relações:**  
+- N:1 com `User`  
+- 0..N com `DiscernmentTag` (ídolos/padrões)  
+- 0..N com `MicroObedienceAssignment` (quando aprovado)
+
+---
+
+### 10) DiscernmentTag
+**Objetivo:** tags estruturadas para análise temporal (sem moralismo).  
+**Exemplos:** idol.CONTROLE, idol.APROVACAO, pattern.ATIVISMO, resistance.FUGA.  
+**Campos típicos:** id, discernment_id, tag_type (IDOL | PATTERN | RESISTANCE | KINGDOM_SIGNAL), tag_code, weight (0–1).  
+**Relações:**  
+- N:1 com `DiscernmentResult`
+
+---
+
+### 11) MicroObedienceLibrary
+**Objetivo:** biblioteca interna de micro-obediências (catálogo), por tipo e área opcional.  
+**Campos típicos:** id, type (VERDADE | PARADA | RECONCILIACAO | LIMITE | ENTREGA | FIDELIDADE | SERVICO), area_id (opcional), title, instruction, duration_min, duration_max, constraints, active.  
+**Relações:**  
+- 0..N com `MicroObedienceAssignment`
+
+---
+
+### 12) MicroObedienceAssignment
+**Objetivo:** “uma obediência por vez” atribuída ao usuário em um contexto específico.  
+**Campos típicos:** id, user_id, area_id, source_discernment_id (opcional), library_item_id (opcional), custom_instruction, assigned_at, due_at (opcional), status (PROPOSED | ACCEPTED | DONE | FAILED | SKIPPED), completed_at (opcional).  
+**Relações:**  
+- N:1 com `User`  
+- N:1 com `Area`  
+- 0..1 com `DiscernmentResult`  
+- 0..N com `MicroObedienceAttempt` (tentativas/retomadas)
+
+---
+
+### 13) MicroObedienceAttempt
+**Objetivo:** registrar tentativas, resistências e retomadas (fidelidade no tempo).  
+**Campos típicos:** id, assignment_id, attempted_at, outcome (DONE | PARTIAL | FAILED), resistance_note (opcional), audio_id (opcional).  
+**Relações:**  
+- N:1 com `MicroObedienceAssignment`  
+- 0..1 com `AudioCapture`
+
+---
+
+### 14) WeeklyReview
+**Objetivo:** evento semanal (liturgia prática): gratidão → discernimento → confissão → foco → plano simples.  
+**Campos típicos:** id, user_id, week_start_date, summary_text (opcional), focus_theme (opcional), created_at.  
+**Relações:**  
+- 0..N com `AudioCapture`  
+- 0..N com `DiscernmentResult`  
+- 0..N com `MicroObedienceAssignment`
+
+---
+
+### 15) DashboardSnapshot
+**Objetivo:** materializar métricas permitidas (fidelidade, coerência, governo, obediência praticada) sem performance.  
+**Campos típicos:** id, user_id, period (DAILY | WEEKLY | MONTHLY), data_json, generated_at.  
+**Relações:**  
+- N:1 com `User`
+
+> Alternativa: não materializar e calcular “on read”. Snapshot melhora velocidade e consistência do app.
+
+---
+
+## Produto e operação
+
+### 16) NotificationPreference
+**Objetivo:** preferências do usuário (email via Resend) por tipo/horário.  
+**Campos típicos:** id, user_id, notif_type (CHECKIN_REMINDER | FOLLOWUP | WEEKLY_REVIEW | MISSED_CHECKIN), channel (EMAIL), hour_local, enabled.  
+**Relações:**  
+- N:1 com `User`
+
+---
+
+### 17) NotificationEvent
+**Objetivo:** fila/histórico de lembretes enviados (auditoria e confiabilidade).  
+**Campos típicos:** id, user_id, type, scheduled_at, sent_at, status, provider_message_id, payload_json.  
+**Relações:**  
+- N:1 com `User`
+
+---
+
+### 18) Subscription
+**Objetivo:** estado de assinatura (trial 14 dias, ativo, cancelado, etc.) integrado ao Strike.  
+**Campos típicos:** id, user_id, status (TRIAL | ACTIVE | PAST_DUE | CANCELED), trial_start, trial_end, current_period_start, current_period_end, strike_customer_id, strike_subscription_id.  
+**Relações:**  
+- 1:1 com `User` (ou 1:N se quiser histórico)
+
+---
+
+### 19) PaymentEvent
+**Objetivo:** registrar eventos de cobrança (sucesso/falha) para suporte e retenção.  
+**Campos típicos:** id, subscription_id, event_type, amount, currency, occurred_at, raw_payload.  
+**Relações:**  
+- N:1 com `Subscription`
+
+---
+
+## Governança, privacidade e segurança
+
+### 20) ConsentEvent
+**Objetivo:** registrar consentimentos (áudio, transcrição, retenção, etc.).  
+**Campos típicos:** id, user_id, consent_type, accepted_at, version.  
+**Relações:**  
+- N:1 com `User`
+
+---
+
+### 21) DataDeletionRequest
+**Objetivo:** trilha de pedidos de exclusão/exportação (LGPD).  
+**Campos típicos:** id, user_id, request_type (DELETE | EXPORT), status, requested_at, completed_at.  
+**Relações:**  
+- N:1 com `User`
+
+---
+
+## Relações principais (resumo)
+
+- `User` 1:N `CheckIn`
+- `CheckIn` 1:N `AreaAssessment`
+- `User` 1:N `AudioCapture` (por contexto)
+- `AudioCapture` 0..1 `Transcript`
+- `User` 1:N `ConversationThread` 1:N `ConversationMessage`
+- `DiscernmentResult` aponta para uma origem (`source_type`, `source_id`) e pode gerar `MicroObedienceAssignment`
+- `MicroObedienceAssignment` 1:N `MicroObedienceAttempt`
+- `User` 1:N `WeeklyReview`
+- `User` 1:N `NotificationEvent` + 1:N `NotificationPreference`
+- `User` 1:1 `Subscription` 1:N `PaymentEvent`
+
+---
+
+## Objetivos por entidade (em uma frase)
+
+- **User:** identidade e contexto do usuário.
+- **Area:** territórios canônicos do Reino.
+- **CheckIn:** evento diário mínimo.
+- **AreaAssessment:** nota + estado por área.
+- **AudioCapture:** captura de realidade falada.
+- **Transcript:** texto pesquisável do áudio.
+- **ConversationThread:** canal por agente/território.
+- **ConversationMessage:** mensagens e histórico de conversa.
+- **DiscernmentResult:** 4 camadas do discernimento (estrutura).
+- **DiscernmentTag:** indexação de ídolos/padrões/resistências/sinais.
+- **MicroObedienceLibrary:** catálogo interno de ações (5–15min).
+- **MicroObedienceAssignment:** “uma obediência por vez” atribuída.
+- **MicroObedienceAttempt:** tentativas e retomadas (fidelidade).
+- **WeeklyReview:** liturgia semanal.
+- **DashboardSnapshot:** métricas permitidas, sem performance.
+- **NotificationPreference:** preferências de lembrete.
+- **NotificationEvent:** auditoria de envio.
+- **Subscription:** trial e status de cobrança.
+- **PaymentEvent:** histórico de pagamentos.
+- **ConsentEvent:** base de consentimento.
+- **DataDeletionRequest:** governança de exclusão/exportação.
+
+---
+
+## Notas de design (importantes)
+
+- **Evitar “pontuações espirituais”**: nenhuma entidade deve gerar ranking ou “nível de fé”.
+- **Estado espiritual por área** (`ALIGNED`, `RESTORATION`, `NEGLECTED`) deve ser armazenado em `AreaAssessment` e pode ser recalculado no tempo.
+- **Discernimento é auditável**: guardar `model_version` e `raw_payload` (opcional) ajuda depuração sem expor ao usuário.
+- **Áudio é primeiro-cidadão**: tudo pode referenciar `AudioCapture` (check-in, review, tentativa).
+- **O que é exibido ≠ o que é medido**: dashboard mostra pouco; o restante fica interno.
+
+---

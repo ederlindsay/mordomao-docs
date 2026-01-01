@@ -1,0 +1,226 @@
+# Sistema – Fluxo Espiritual do Usuário  
+## Avaliação → Fala → Discernimento → Obediência → Acompanhamento
+
+---
+
+## Introdução
+
+O Mordomão não é um app de metas, hábitos ou performance.  
+Ele é um **sistema espiritual-operacional** desenhado para **ajudar o usuário a viver sob o governo do Reino de Deus**, dia após dia.
+
+Por isso, o fluxo central do sistema não é:
+> planejar → executar → medir → otimizar
+
+Mas:
+> **avaliar → falar → discernir → obedecer → acompanhar**
+
+Este fluxo respeita:
+- a condição humana
+- o ritmo da santificação
+- a necessidade de escuta
+- a primazia da obediência simples
+- a ação progressiva do Reino
+
+---
+
+## Visão Geral do Fluxo
+
+O ciclo do Mordomão funciona de forma **contínua e diária**, com variações de profundidade:
+
+1. **Avaliação** – Onde estou em relação ao Reino?
+2. **Fala** – Nomear a realidade sem máscaras
+3. **Discernimento** – Quem governa aqui?
+4. **Obediência** – O que o Reino pede agora?
+5. **Acompanhamento** – Sustentar fidelidade no tempo
+
+O sistema **nunca avança uma etapa sem respeitar a anterior**.
+
+---
+
+## 1. Avaliação  
+### “Onde estou em relação ao Reino?”
+
+### Objetivo espiritual
+Trazer **consciência**, não julgamento.
+
+### Como funciona no sistema
+- O usuário avalia cada área (Fonte, Relacionamentos, Vocação, Mordomia, Ritmo, Missão, Fidelidade)
+- A pergunta-base não é “como você se sente?”
+- A pergunta-base é:
+  > **“O quanto Deus está sendo glorificado por meio de você nesta área hoje?”**
+
+### Características da avaliação
+- Escala simples (ex: 1 a 5)
+- Linguagem pastoral, não técnica
+- Sem comparação com outros
+- Sem histórico exibido no momento da avaliação
+
+### Princípio do Reino
+📖 Lamentações 3:40  
+> “Examinemos e provemos os nossos caminhos…”
+
+---
+
+## 2. Fala  
+### “Nomear a realidade diante de Deus”
+
+### Objetivo espiritual
+Trazer **verdade à luz**.
+
+### Como funciona no sistema
+- Ao detectar nota baixa, instabilidade ou padrão recorrente, o sistema:
+  - **abre automaticamente o microfone**
+  - convida o usuário a falar livremente
+- O usuário pode falar:
+  - o que está acontecendo
+  - por que acredita que está desalinhado
+  - o que sente
+  - o que teme
+  - o que evita
+
+### Características da fala
+- Sem limite rígido
+- Sem estrutura forçada
+- Linguagem natural
+- Registro integral (texto + áudio)
+- Contextualizada por área e momento
+
+### Princípio do Reino
+📖 Salmo 32:5  
+> “Confessei-te o meu pecado…”
+
+---
+
+## 3. Discernimento  
+### “Quem está governando aqui?”
+
+### Objetivo espiritual
+Discernir **governo**, não comportamento isolado.
+
+### Como funciona no sistema
+A IA processa a fala através de **quatro camadas de discernimento** (detalhadas em documento próprio):
+
+1. **Camada Narrativa** – o que está sendo dito
+2. **Camada de Padrões** – recorrências e repetições
+3. **Camada de Ídolos** – o que está no lugar de Deus
+4. **Camada do Reino** – onde há desalinhamento ou abertura
+
+O resultado do discernimento:
+- não rotula
+- não acusa
+- não patologiza
+- **nomeia com amor o que governa**
+
+### Linguagem usada pela IA
+- clara
+- pastoral
+- direta
+- sem jargão
+- sem relativismo
+
+### Princípio do Reino
+📖 Hebreus 4:12  
+> “A Palavra… discerne os pensamentos e intenções do coração.”
+
+---
+
+## 4. Obediência  
+### “O que o Reino pede agora?”
+
+### Objetivo espiritual
+Converter discernimento em **ato concreto de obediência**.
+
+### Como funciona no sistema
+- A IA **nunca sugere listas longas**
+- Sempre propõe **uma micro-obediência**
+- A ação proposta é:
+  - pequena
+  - possível
+  - concreta
+  - custosa (nega o eu)
+  - alinhada ao Reino
+
+### Exemplos de micro-obediência
+- pedir perdão
+- parar e descansar
+- dizer “não”
+- organizar algo simples
+- servir alguém próximo
+- abandonar uma prática desalinhada
+
+### Regra de ouro
+> **Sem obediência, não há avanço no sistema.**
+
+### Princípio do Reino
+📖 Lucas 9:23  
+> “Negue-se a si mesmo…”
+
+---
+
+## 5. Acompanhamento  
+### “Sustentar fidelidade no tempo”
+
+### Objetivo espiritual
+Evitar decisões emocionais sem continuidade.
+
+### Como funciona no sistema
+- O sistema:
+  - registra a obediência proposta
+  - agenda lembretes gentis (email / notificação)
+  - retoma o tema nos dias seguintes
+- A IA acompanha:
+  - se a obediência foi praticada
+  - se houve resistência
+  - se há necessidade de simplificar ainda mais
+
+### Importante
+- Não há punição por falha
+- Há **retorno ao fluxo**
+- Falhar leva de volta à fala, não à culpa
+
+### Princípio do Reino
+📖 Gálatas 6:9  
+> “Não nos cansemos de fazer o bem…”
+
+---
+
+## O ciclo contínuo
+
+O fluxo não é linear.  
+Ele é **espiral**:
+
+- Avaliação gera fala
+- Fala aprofunda discernimento
+- Discernimento chama obediência
+- Obediência gera maturidade
+- Maturidade refina avaliação
+
+---
+
+## Implicações para o Produto
+
+Este fluxo governa:
+- UX do app
+- arquitetura de agentes
+- lógica de notificações
+- gamificação (fidelidade, não streak)
+- dashboard (tendência, não ranking)
+
+O Mordomão **não acelera o usuário**.  
+Ele o **mantém no caminho**.
+
+---
+
+## Declaração Final
+
+O Mordomão afirma:
+
+> **A vida muda quando a verdade é dita,  
+o governo é discernido,  
+e a obediência é praticada.**
+
+Não por força.  
+Não por culpa.  
+Mas pelo Reino.
+
+> **“Se alguém quer vir após mim…”**

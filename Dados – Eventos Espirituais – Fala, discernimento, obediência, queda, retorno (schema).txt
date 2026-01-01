@@ -1,0 +1,355 @@
+# Dados – Eventos Espirituais  
+## Fala, discernimento, obediência, queda, retorno (schema)
+
+---
+
+## Introdução
+
+O Mordomão precisa de um **schema de eventos espirituais** para registrar o fluxo:
+**Fala → Discernimento → Obediência → (Queda) → Retorno**, sem transformar a vida em performance.
+
+Objetivos do schema:
+- capturar a jornada como **linha do tempo**
+- sustentar acompanhamento e padrões
+- permitir auditoria do “por que” de cada sugestão
+- manter linguagem do Reino (governo, resistência, retorno)
+- evitar métricas de ego (ranking, streak punitiva)
+
+---
+
+## Princípio do Schema
+
+> **Evento é registro de verdade e resposta, não pontuação.**
+
+Um “evento espiritual” é qualquer momento em que:
+- a realidade é nomeada (fala)
+- o governo é discernido
+- uma obediência é proposta/tentada
+- ocorre queda/resistência relevante
+- há retorno à rota (recomeço fiel)
+
+---
+
+## Entidade-base: SpiritualEvent
+
+### SpiritualEvent (tabela)
+**Objetivo:** linha do tempo unificada de eventos espirituais do usuário.
+
+**Campos principais**
+- `id` (uuid)
+- `user_id` (uuid, fk User)
+- `occurred_at` (timestamptz) — quando aconteceu
+- `created_at` (timestamptz) — quando foi registrado
+- `event_type` (enum) — tipo canônico do evento
+- `area_id` (uuid, fk Area, nullable) — território principal
+- `context_type` (enum) — origem (CHECKIN, WEEKLY_REVIEW, AREA_CHAT, FREE, SYSTEM)
+- `context_id` (uuid, nullable) — id do objeto de origem (CheckIn, WeeklyReview, Thread etc.)
+- `source_ref_type` (enum, nullable) — AUDIO, MESSAGE, MANUAL, SYSTEM
+- `source_ref_id` (uuid, nullable) — id do áudio/mensagem, quando houver
+- `summary` (text, nullable) — resumo curto (para timeline)
+- `payload` (jsonb) — dados específicos do tipo (ver schemas abaixo)
+- `visibility` (enum) — USER_VISIBLE | INTERNAL_ONLY
+- `sensitivity` (enum) — NORMAL | SENSITIVE
+- `version` (int) — versão do schema do payload
+
+**Relações**
+- N:1 com `User`
+- N:1 com `Area` (opcional)
+- 0..N com `SpiritualEventLink` (para encadear eventos)
+
+---
+
+## Encadeamento: SpiritualEventLink
+
+### SpiritualEventLink (tabela)
+**Objetivo:** ligar eventos em “cadeias espirituais” (ex.: fala → discernimento → obediência → retorno).
+
+**Campos**
+- `id` (uuid)
+- `from_event_id` (uuid, fk SpiritualEvent)
+- `to_event_id` (uuid, fk SpiritualEvent)
+- `link_type` (enum) — CAUSED | FOLLOWUP | RESPONSE_TO | REFINES | SUPERSEDES
+- `created_at` (timestamptz)
+
+---
+
+## Tipos canônicos de evento (enum `event_type`)
+
+1. `SPEECH_CAPTURED` — fala registrada (áudio/texto)
+2. `DISCERNMENT_RECORDED` — discernimento produzido (4 camadas)
+3. `OBEDIENCE_PROPOSED` — micro-obediência sugerida
+4. `OBEDIENCE_ACCEPTED` — usuário aceita/intenciona praticar
+5. `OBEDIENCE_ATTEMPTED` — tentativa registrada
+6. `OBEDIENCE_COMPLETED` — obediência concluída
+7. `RESISTANCE_NOTED` — resistência explícita (sem moralismo)
+8. `FALL_OCCURRED` — queda (evento de desalinhamento relevante)
+9. `RETURN_INITIATED` — retorno à rota iniciado
+10. `AREA_STATE_CHANGED` — transição de estado da área (aligned/restoration/neglected)
+11. `FOLLOWUP_ANSWERED` — resposta a acompanhamento
+12. `GRACE_MARKER` — marco de graça/gratidão (sem “badge”)
+13. `BOUNDARY_SET` — limite estabelecido (muito comum em Ritmo/Vocação)
+14. `RECONCILIATION_STEP` — passo relacional (pedido de perdão, reconciliação)
+15. `SERVICE_STEP` — ato de serviço ao próximo
+
+> Observação: nem todos precisam ser exibidos ao usuário; usar `visibility`.
+
+---
+
+## Schemas de payload por tipo (jsonb)
+
+Abaixo estão **schemas recomendados** (formato descritivo).  
+Na implementação, cada `payload` é um JSON válido.
+
+---
+
+### 1) SPEECH_CAPTURED.payload
+**Objetivo:** registrar fala como “verdade nomeada” (texto e/ou áudio).
+
+Campos recomendados:
+- `mode` (AUDIO | TEXT)
+- `audio_id` (uuid, nullable)
+- `transcript_id` (uuid, nullable)
+- `text_excerpt` (string, nullable, <= 280 chars)
+- `speech_intent` (DESABAFO | CONFISSAO | CONFUSAO | RESISTENCIA | PEDIDO_AJUDA | GRATIDAO)
+- `tone_markers` (array<string>, opcional) — ex.: ["cansaco","medo","raiva","culpa"]
+- `user_prompted_by_system` (bool) — se áudio abriu automático
+
+---
+
+### 2) DISCERNMENT_RECORDED.payload
+**Objetivo:** persistir as 4 camadas de discernimento de forma auditável.
+
+Campos recomendados:
+- `layer1_classification`:
+  - `primary_area_id` (uuid)
+  - `secondary_area_ids` (array<uuid>)
+  - `speech_intent` (enum)
+  - `prelim_state` (ALIGNED | RESTORATION | NEGLECTED)
+- `layer2_diagnosis`:
+  - `governance` (GOD | IDOL_MIXED | IDOL_DOMINANT)
+  - `suspected_idols` (array<string>) — ex.: ["CONTROLE","APROVACAO"]
+  - `resistances` (array<string>) — ex.: ["FUGA","JUSTIFICATIVA"]
+  - `kingdom_signals` (array<string>) — ex.: ["ARREPENDIMENTO","HUMILDADE"]
+  - `pattern_notes` (string, optional)
+- `layer3_next_step_candidate`:
+  - `type` (VERDADE | PARADA | RECONCILIACAO | LIMITE | ENTREGA | FIDELIDADE | SERVICO)
+  - `duration_min` (int)
+  - `instruction` (string)
+  - `cost_axis` (ORGULHO | MEDO | CONTROLE | CONFORTO)
+- `layer4_followup_plan`:
+  - `followup_question` (string)
+  - `followup_in_days` (int)
+  - `simplify_if_failed` (bool)
+- `model_version` (string)
+- `confidence` (0..1)
+
+---
+
+### 3) OBEDIENCE_PROPOSED.payload
+**Objetivo:** registrar a micro-obediência sugerida (uma por ciclo).
+
+Campos recomendados:
+- `assignment_id` (uuid, opcional se já existir)
+- `micro_type` (enum)
+- `instruction` (string)
+- `duration_min` (int)
+- `deadline` (timestamptz, nullable)
+- `reason` (string, <= 280 chars) — “por que esta obediência”
+- `aligned_with_rule_of_kingdom` (bool, sempre true)
+
+---
+
+### 4) OBEDIENCE_ACCEPTED.payload
+**Objetivo:** registrar intenção/aceite (sem pressão).
+
+Campos recomendados:
+- `assignment_id` (uuid)
+- `accept_mode` (EXPLICIT | IMPLICIT)
+- `user_words` (string, nullable) — “vou tentar”, “ok”
+- `start_when` (NOW | TODAY | TOMORROW | THIS_WEEK)
+
+---
+
+### 5) OBEDIENCE_ATTEMPTED.payload
+**Objetivo:** registrar tentativa e resistência (se houver).
+
+Campos recomendados:
+- `assignment_id` (uuid)
+- `attempt_id` (uuid, opcional)
+- `outcome` (DONE | PARTIAL | FAILED)
+- `resistance_markers` (array<string>, opcional) — ex.: ["MEDO","PROCRASTINACAO"]
+- `audio_id` (uuid, nullable) — se narrou
+- `note` (string, nullable)
+
+---
+
+### 6) OBEDIENCE_COMPLETED.payload
+**Objetivo:** conclusão simples (sem celebração inflada).
+
+Campos recomendados:
+- `assignment_id` (uuid)
+- `completed_at` (timestamptz)
+- `quiet_gratitude` (bool) — true por padrão
+- `impact_on_next` (string, optional) — “ficou mais fácil dizer não”, etc.
+
+---
+
+### 7) RESISTANCE_NOTED.payload
+**Objetivo:** registrar resistência explícita (não é queda necessariamente).
+
+Campos recomendados:
+- `resistance_type` (FUGA | JUSTIFICATIVA | MEDO | CONTROLE | ORGULHO | APATIA)
+- `trigger` (string, nullable)
+- `where_it_showed` (DECISION | REACTION | DISCOURSE | PATTERN)
+- `note` (string, nullable)
+
+---
+
+### 8) FALL_OCCURRED.payload
+**Objetivo:** evento de queda (desalinhamento relevante) sem condenação.
+
+Campos recomendados:
+- `fall_kind` (OMISSAO | EXCESSO | DUREZA | COMPULSAO | FUGA | DESOBEDIENCIA_CONSCIENTE)
+- `area_impacted_ids` (array<uuid>)
+- `governance_shift` (IDOL_DOMINANT | MIXED)
+- `user_named_truth` (bool) — se houve verdade nomeada
+- `note` (string, nullable)
+
+> Regra: queda nunca gera “perda irreversível” no sistema.
+
+---
+
+### 9) RETURN_INITIATED.payload
+**Objetivo:** retorno à rota iniciado (recomeço fiel).
+
+Campos recomendados:
+- `return_pattern` (VERDADE | PARADA | RECONCILIACAO | ENTREGA | BASICO)
+- `first_step` (string) — micro passo de retorno
+- `audio_id` (uuid, nullable)
+- `linked_fall_event_id` (uuid, nullable)
+
+---
+
+### 10) AREA_STATE_CHANGED.payload
+**Objetivo:** transição de estado por área, baseada em tendência + fala.
+
+Campos recomendados:
+- `from_state` (ALIGNED | RESTORATION | NEGLECTED)
+- `to_state` (ALIGNED | RESTORATION | NEGLECTED)
+- `reason` (string, <= 280 chars)
+- `based_on` (CHECKINS | DISCERNMENTS | OBEDIENCE | MIXED)
+
+---
+
+### 11) FOLLOWUP_ANSWERED.payload
+**Objetivo:** registrar resposta à pergunta de acompanhamento.
+
+Campos recomendados:
+- `question` (string)
+- `answer_text` (string, nullable)
+- `audio_id` (uuid, nullable)
+- `result` (ADVANCED | STUCK | REGRESSED)
+- `next_action` (SIMPLIFY | REPEAT | NEW_OBEDIENCE | RETURN_TO_SPEECH)
+
+---
+
+### 12) GRACE_MARKER.payload
+**Objetivo:** registrar gratidão/“marco de graça” sem badge/performance.
+
+Campos recomendados:
+- `grace_kind` (GRATIDAO | CONSOLACAO | PROVISAO | RECONCILIACAO | LIVRAMENTO)
+- `note` (string, <= 280 chars)
+- `area_id` (uuid, nullable)
+
+---
+
+### 13) BOUNDARY_SET.payload
+**Objetivo:** limite obediente (muito comum em Ritmo/Vocação).
+
+Campos recomendados:
+- `boundary_kind` (TIME | MONEY | ATTENTION | RELATIONAL | DIGITAL)
+- `boundary_text` (string) — “Encerrar trabalho às 19h”
+- `cost_axis` (MEDO | APROVACAO | CONTROLE)
+- `followup_in_days` (int)
+
+---
+
+### 14) RECONCILIATION_STEP.payload
+**Objetivo:** passo de amor ao próximo.
+
+Campos recomendados:
+- `step_kind` (ASK_FORGIVENESS | OFFER_FORGIVENESS | START_CONVERSATION | LISTEN)
+- `target_role` (SPOUSE | CHILD | FRIEND | COWORKER | CHURCH | OTHER)
+- `note` (string, <= 280 chars)
+- `followup_in_days` (int)
+
+---
+
+### 15) SERVICE_STEP.payload
+**Objetivo:** ato simples de serviço (missão no perto).
+
+Campos recomendados:
+- `service_kind` (HELP | HOSPITALITY | GIVE | VISIT | LISTEN | DEFEND)
+- `target_role` (NEIGHBOR | FAMILY | FRIEND | STRANGER | CHURCH | OTHER)
+- `note` (string, <= 280 chars)
+
+---
+
+## Regras globais do schema (guardrails)
+
+1. **Um evento não é uma nota moral**  
+   `FALL_OCCURRED` não rotula o usuário; descreve uma ocorrência.
+
+2. **Queda nunca é irreversível**  
+   Não existe evento “DEAD” ou “LOST”.
+
+3. **Visibilidade é controlada por evento**  
+   - USER_VISIBLE: fala, obediência proposta, retorno, gratidão
+   - INTERNAL_ONLY: diagnósticos detalhados, tags de ídolos com peso
+
+4. **Um próximo passo por ciclo**  
+   Um `DISCERNMENT_RECORDED` só pode gerar **um** `OBEDIENCE_PROPOSED` ativo por área.
+
+5. **Acompanhamento sempre fecha o loop**  
+   Eventos `FOLLOWUP_ANSWERED` devem linkar (SpiritualEventLink) ao `OBEDIENCE_PROPOSED`/`ASSIGNMENT`.
+
+---
+
+## Exemplos de cadeias de eventos
+
+### Cadeia 1: Nota baixa → retorno
+- SPEECH_CAPTURED (áudio automático)
+- DISCERNMENT_RECORDED
+- OBEDIENCE_PROPOSED
+- OBEDIENCE_ACCEPTED
+- OBEDIENCE_ATTEMPTED
+- (se falhou) RESISTANCE_NOTED → RETURN_INITIATED → OBEDIENCE_PROPOSED (simplificada)
+
+### Cadeia 2: Queda → retorno imediato
+- FALL_OCCURRED
+- SPEECH_CAPTURED (confissão)
+- RETURN_INITIATED (padrão VERDADE)
+- OBEDIENCE_PROPOSED (micro passo)
+- FOLLOWUP_ANSWERED
+
+---
+
+## Índices recomendados (conceitual)
+
+- `(user_id, occurred_at desc)`
+- `(user_id, area_id, occurred_at desc)`
+- `(user_id, event_type, occurred_at desc)`
+- `(context_type, context_id)` para navegar a partir do check-in/review
+- GIN em `payload` (jsonb) para tags e filtros (opcional)
+
+---
+
+## Observação importante (LGPD e sensibilidade)
+
+- `sensitivity = SENSITIVE` para:
+  - confissões íntimas
+  - nomes de terceiros (preferir registrar “role”, não nome)
+  - detalhes financeiros/saúde
+- permitir “delete hard” por usuário em áudio/transcrição e seus eventos associados (via `DataDeletionRequest` no modelo conceitual anterior)
+
+---
